@@ -5,12 +5,15 @@ export default function Platforms() {
   return (
     <section className="section container">
 
-      <p className="section-label">Platforms</p>
+      <p className="section-label">
+        Case Studies
+      </p>
 
-      <h2>AI Platform Case Studies</h2>
+      <h2>Enterprise Platform Case Studies</h2>
 
       <p className="section-description">
-        Enterprise AI systems spanning security, trust, operations, and decision intelligence.
+        Enterprise AI, data, and decision intelligence platforms demonstrating
+        product strategy, platform thinking, and scalable systems design.
       </p>
 
       <div className="platform-grid">
@@ -21,19 +24,18 @@ export default function Platforms() {
             href={`/platforms/${platform.slug}`}
             className="platform-card"
           >
-
             <h3>{platform.title}</h3>
 
-            <p>{platform.subtitle}</p>
+            <p>{platform.tagline}</p>
 
             <span className="learn-more">
               View case study →
             </span>
-
           </Link>
         ))}
 
       </div>
+
     </section>
   );
 }
