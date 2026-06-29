@@ -1,42 +1,50 @@
 export default function Hero() {
   return (
     <section className="hero">
+      <div className="container hero-content">
 
-      <p className="eyebrow">
-        Senior Product Leader
-      </p>
+        <p className="eyebrow">
+          Senior Product Leader
+        </p>
 
-      <h1>
-        AI & Intelligence <br />
-        Platforms
-      </h1>
+        <h1>
+          Building Intelligent
+          <br />
+          AI Platforms
+        </h1>
 
-      <p className="hero-text">
-        Building AI-powered intelligence platforms that transform
-        fragmented products, processes, and data into scalable
-        decision systems that deliver measurable business outcomes.
-      </p>
+        <p className="subtitle">
+          Transforming fragmented products, processes,
+          and enterprise data into scalable AI-powered
+          decision systems that deliver measurable
+          business outcomes.
+        </p>
 
-      <div className="hero-buttons">
-        <a href="/resume.pdf" className="primary">
-          Download Resume
-        </a>
+        <div className="buttons">
+          <a href="/resume.pdf" className="btn-primary">
+            Resume
+          </a>
 
-        <a
-          href="https://linkedin.com/in/YOUR_LINKEDIN"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
+          <a
+            href="https://linkedin.com/in/YOUR_LINKEDIN"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary"
+          >
+            LinkedIn
+          </a>
 
-        <a
-          href="https://github.com/YOUR_GITHUB"
-          target="_blank"
-        >
-          GitHub
-        </a>
+          <a
+            href="https://github.com/karthik-pmlead"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary"
+          >
+            GitHub
+          </a>
+        </div>
+
       </div>
-
     </section>
   );
 }
