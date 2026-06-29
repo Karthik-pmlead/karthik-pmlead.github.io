@@ -1,45 +1,71 @@
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <main className="container">
-      <section className="platforms-hero">
-        <p className="section-label">CONTACT</p>
 
+      <section className="hero">
         <h1>Let's Connect</h1>
 
-        <p className="hero-description">
-          I'm always interested in discussing AI product management,
+        <p className="hero-subtitle">
+          I'm always interested in discussing AI product leadership,
           enterprise platforms, and opportunities to build intelligent
-          systems at scale.
+          products that create meaningful business impact.
         </p>
       </section>
 
       <section className="platform-section">
-        <div className="capability-grid">
-          <div className="capability-card">
-            <strong>Email</strong>
-            <br />
+
+        <h2>Contact</h2>
+
+        <p>
+          <strong>Email:</strong>{" "}
+          <a
+            href="mailto:karthik_prdmgr@hotmail.com"
+            className="contact-link"
+          >
             karthik_prdmgr@hotmail.com
-          </div>
+          </a>
+        </p>
 
-          <div className="capability-card">
-            <strong>LinkedIn</strong>
-            <br />
+        <p>
+          <strong>LinkedIn:</strong>{" "}
+          <a
+            href="https://www.linkedin.com/in/karthik-dir"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
             linkedin.com/in/karthik-dir
-          </div>
+          </a>
+        </p>
 
-          <div className="capability-card">
-            <strong>GitHub</strong>
-            <br />
+        <p>
+          <strong>GitHub:</strong>{" "}
+          <a
+            href="https://github.com/Karthik-pmlead"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
             github.com/Karthik-pmlead
-          </div>
+          </a>
+        </p>
 
-          <div className="capability-card">
-            <strong>Medium</strong>
-            <br />
-            medium.com/@karthik_prdmgr
-          </div>
-        </div>
+        <p>
+          <strong>Medium:</strong>{" "}
+          <a
+            href="https://medium.com/@karthik_prdmgr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            Medium Articles
+          </a>
+        </p>
+
       </section>
+
     </main>
   );
 }
