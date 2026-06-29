@@ -1,33 +1,32 @@
-import Metrics from "./Metrics";
-
 export default function About() {
   return (
-    <section id="about" className="section">
-      <div className="container">
+    <main className="container">
 
-        <p className="section-label">
-          About
-        </p>
+      {/* TITLE SECTION */}
+      <section className="about-header">
+        <h1>About</h1>
 
-        <h2>
-          Building intelligent platforms that
-          enable better business decisions.
-        </h2>
+	<p>
+  	 I build enterprise-scale AI, IoT, and decision intelligence platforms that transform fragmented products, processes, and data into intelligent systems. Across Dell, Buckman, and Sterna, I've led 0→1 platform development, product strategy, and cross-functional execution to modernize enterprise operations and enable faster, data-driven decision-making at scale.
+	</p>
+      </section>
 
-        <p className="section-description">
-          I'm a Senior Product Leader with 15+ years of experience
-          building enterprise products across AI, GenAI, IoT,
-          analytics, cloud, and SaaS.
+      {/* CAPABILITY CARDS */}
+      <section className="preview-section">
+        <h2>Capabilities</h2>
 
-          My work focuses on repeatedly transforming fragmented
-          products, processes, and enterprise data into intelligent
-          platforms that improve decision-making and deliver
-          measurable business outcomes at scale.
-        </p>
+        <div className="grid">
 
-        <Metrics />
+          <div className="card">Enterprise AI & IoT platforms</div>
+          <div className="card">0→1 product & platform development</div>
+          <div className="card">Data-driven decision systems</div>
+          <div className="card">Cross-functional product leadership</div>
+          <div className="card">Enterprise system modernization</div>
+          <div className="card">Scalable workflow automation</div>
 
-      </div>
-    </section>
+        </div>
+      </section>
+
+    </main>
   );
 }

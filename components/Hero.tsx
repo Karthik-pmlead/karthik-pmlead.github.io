@@ -1,49 +1,28 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="container hero-content">
+      <p className="hero-label">
+        AI PRODUCT LEADERSHIP PORTFOLIO
+      </p>
 
-        <p className="eyebrow">
-          Senior Product Leader
-        </p>
+      <h1>Building Intelligent Enterprise Systems</h1>
 
-        <h1>
-          Building Intelligent
-          <br />
-          AI Platforms
-        </h1>
+      <p className="hero-subtitle">
+        Building enterprise-scale AI, IoT, and decision intelligence platforms
+        that transform fragmented products, processes, and data into intelligent
+        systems that improve operational visibility and business decision-making.
+      </p>
 
-        <p className="subtitle">
-          Transforming fragmented products, processes,
-          and enterprise data into scalable AI-powered
-          decision systems that deliver measurable
-          business outcomes.
-        </p>
+      <div className="hero-cta">
+        <Link href="/platforms" className="btn-primary">
+          Explore Case Studies
+        </Link>
 
-        <div className="buttons">
-          <a href="/resume.pdf" className="btn-primary">
-            Resume
-          </a>
-
-          <a
-            href="https://linkedin.com/in/YOUR_LINKEDIN"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-secondary"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="https://github.com/karthik-pmlead"
-            target="_blank"
-            rel="noreferrer"
-            className="btn-secondary"
-          >
-            GitHub
-          </a>
-        </div>
-
+        <Link href="/insights" className="btn-secondary">
+          Read Insights
+        </Link>
       </div>
     </section>
   );

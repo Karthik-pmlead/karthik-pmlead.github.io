@@ -1,0 +1,105 @@
+import { notFound } from "next/navigation";
+import { platforms } from "@/data/platforms";
+import SectionBlock from "@/components/platform/SectionBlock";
+
+export default async function PlatformPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const platform = platforms.find((p) => p.slug === slug);
+
+  if (!platform) return notFound();
+
+  return (
+    <main className="container section">
+
+      {/* =========================
+          HEADER (UPGRADED)
+      ========================= */}
+
+      <p className="section-label">
+        AI Platform Case Study
+      </p>
+
+      <h1 className="platform-title">
+        {platform.title}
+      </h1>
+
+      <p className="platform-subtitle">
+        {platform.subtitle}
+      </p>
+
+      {/* HERO CARD */}
+      <div className="platform-hero-card">
+
+        <p className="platform-hero-text">
+          {platform.overview}
+        </p>
+
+        <div className="platform-meta-grid">
+
+          <div>
+            <p className="meta-label">Focus</p>
+            <p className="meta-value">Enterprise AI Platform</p>
+          </div>
+
+          <div>
+            <p className="meta-label">Domain</p>
+            <p className="meta-value">Decision Intelligence</p>
+          </div>
+
+          <div>
+            <p className="meta-label">Role</p>
+            <p className="meta-value">Product Lead</p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* =========================
+          CASE STUDY SECTIONS
+      ========================= */}
+
+      <SectionBlock title="Problem">
+        {platform.problem}
+      </SectionBlock>
+
+      <SectionBlock title="My Role">
+        I led product strategy, platform definition, stakeholder alignment,
+        and end-to-end design of the AI-powered decision system.
+      </SectionBlock>
+
+      <SectionBlock title="Solution">
+        {platform.solution}
+      </SectionBlock>
+
+      <SectionBlock title="Capabilities">
+        <ul>
+          {platform.capabilities.map((c) => (
+            <li key={c}>• {c}</li>
+          ))}
+        </ul>
+      </SectionBlock>
+
+      <SectionBlock title="Business Impact">
+        <ul>
+          {platform.outcomes.map((o) => (
+            <li key={o}>• {o}</li>
+          ))}
+        </ul>
+      </SectionBlock>
+
+      <SectionBlock title="Technology Stack">
+        <ul>
+          {platform.technologies.map((t) => (
+            <li key={t}>• {t}</li>
+          ))}
+        </ul>
+      </SectionBlock>
+
+    </main>
+  );
+}

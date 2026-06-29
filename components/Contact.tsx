@@ -9,12 +9,12 @@ export default function Contact() {
       </p>
 
       <div className="hero-buttons">
-        <a href="mailto:your@email.com" className="primary">
+        <a href="mailto:karthik_prdmgr@hotmail.com" className="primary">
           Email
         </a>
 
         <a
-          href="https://linkedin.com/in/YOUR_PROFILE"
+          href="https://linkedin.com/in/karthik-dir"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -22,7 +22,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="https://github.com/karthik-pmlead"
+          href="https://github.com/Karthik-pmlead"
           target="_blank"
           rel="noopener noreferrer"
         >

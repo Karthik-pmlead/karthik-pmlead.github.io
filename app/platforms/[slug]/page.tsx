@@ -1,5 +1,12 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { platforms } from "@/data/platforms";
+
+export function generateStaticParams() {
+  return platforms.map((platform) => ({
+    slug: platform.slug,
+  }));
+}
 
 export default async function PlatformPage({
   params,
@@ -15,53 +22,126 @@ export default async function PlatformPage({
   }
 
   return (
-    <main className="container section">
+    <main className="container">
 
-      <p className="section-label">
-        AI Platform
-      </p>
+      {/* -------------------------------- */}
+      {/* Breadcrumb */}
+      {/* -------------------------------- */}
 
-      <h1>{platform.title}</h1>
+      <nav className="breadcrumb">
+        <Link href="/">Home</Link>
+        <span>/</span>
+        <Link href="/platforms">Case Studies</Link>
+        <span>/</span>
+        <span>{platform.title}</span>
+      </nav>
 
-      <p className="section-description">
-        {platform.subtitle}
-      </p>
+      {/* -------------------------------- */}
+      {/* Hero */}
+      {/* -------------------------------- */}
 
-      <h2>Overview</h2>
+      <section className="platform-hero">
+        <h1>{platform.title}</h1>
 
-      <p>{platform.overview}</p>
+        <p className="platform-tagline">
+          {platform.tagline}
+        </p>
+      </section>
 
-      <h2>Business Problem</h2>
+      {/* -------------------------------- */}
+      {/* Platform Overview */}
+      {/* -------------------------------- */}
 
-      <p>{platform.problem}</p>
+      <section className="platform-section">
+        <h2>Platform Overview</h2>
 
-      <h2>Solution</h2>
+        <p>{platform.overview}</p>
+      </section>
 
-      <p>{platform.solution}</p>
+      {/* -------------------------------- */}
+      {/* Executive Summary */}
+      {/* -------------------------------- */}
 
-      <h2>Capabilities</h2>
+      <section className="platform-section">
 
-      <ul>
-        {platform.capabilities.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+        <div className="content-panel">
+          <h3>Business Context</h3>
 
-      <h2>Business Outcomes</h2>
+          <p>{platform.businessContext}</p>
+        </div>
 
-      <ul>
-        {platform.outcomes.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+        <div className="content-panel">
+          <h3>Customer Problem</h3>
 
-      <h2>Technology</h2>
+          <p>{platform.customerProblem}</p>
+        </div>
 
-      <ul>
-        {platform.technologies.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+        <div className="content-panel">
+          <h3>Product Strategy</h3>
+
+          <p>{platform.productStrategy}</p>
+        </div>
+
+      </section>
+
+      {/* -------------------------------- */}
+      {/* Platform Capabilities */}
+      {/* -------------------------------- */}
+
+      <section className="platform-section">
+
+        <h2>Key Platform Capabilities</h2>
+
+        <div className="platform-capabilities">
+
+          {platform.capabilities.map((capability) => (
+            <span
+              key={capability}
+              className="platform-capability"
+            >
+              {capability}
+            </span>
+          ))}
+
+        </div>
+
+      </section>
+
+      {/* -------------------------------- */}
+      {/* Business Impact */}
+      {/* -------------------------------- */}
+
+      <section className="platform-section">
+
+        <h2>Business Impact</h2>
+
+        <ul className="impact-list">
+
+          {platform.businessImpact.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+
+        </ul>
+
+      </section>
+
+      {/* -------------------------------- */}
+      {/* Leadership */}
+      {/* -------------------------------- */}
+
+      <section className="platform-section">
+
+        <h2>Product Leadership Takeaways</h2>
+
+        <ul className="impact-list">
+
+          {platform.leadershipTakeaways.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+
+        </ul>
+
+      </section>
 
     </main>
   );
