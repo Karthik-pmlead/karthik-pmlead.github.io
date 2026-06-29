@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type PlatformCardProps = {
   title: string;
   description: string;
@@ -15,9 +17,9 @@ export default function PlatformCard({
 
       <p>{description}</p>
 
-      <a href={href}>
+      <Link href={href} className="learn-more">
         Learn More →
-      </a>
+      </Link>
     </div>
   );
 }
