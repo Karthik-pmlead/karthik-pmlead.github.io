@@ -1,20 +1,15 @@
-const repoName = "YOUR_REPO_NAME"; // 👈 CHANGE THIS
+```ts
+import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_ACTIONS === "true";
-
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: "export",
-
   trailingSlash: true,
 
   images: {
     unoptimized: true,
   },
-
-  // IMPORTANT for GitHub Pages
-  basePath: isGithubPages ? `/${repoName}` : "",
-
-  assetPrefix: isGithubPages ? `/${repoName}/` : "",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+```
+
