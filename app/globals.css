@@ -154,3 +154,69 @@ font-size:3rem;
 }
 
 }
+
+.section {
+  padding: 100px 0;
+}
+
+.section-label {
+  color: #6366f1;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 720px;
+  color: #666;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.platform-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px;
+  transition: all 0.25s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.platform-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+}
+
+.platform-card p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.platform-card a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.platform-card a:hover {
+  text-decoration: underline;
+}
