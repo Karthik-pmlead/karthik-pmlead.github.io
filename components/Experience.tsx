@@ -1,16 +1,33 @@
+const highlights = [
+  "Led AI, IoT, and Enterprise Platform initiatives.",
+  "Defined product vision and long-term platform strategy.",
+  "Partnered across Engineering, Design, Data Science, and Business.",
+  "Delivered AI-powered products from concept to launch.",
+  "Built reusable platforms instead of isolated features.",
+];
+
 export default function Experience() {
   return (
-    <section id="experience" className="section">
-      <h2>Experience Highlights</h2>
+    <section className="section">
+      <div className="container">
 
-      <ul>
-        <li>15+ Years in Product Leadership</li>
-        <li>AI & GenAI Products</li>
-        <li>IoT & Connected Platforms</li>
-        <li>Enterprise SaaS</li>
-        <li>Platform Strategy</li>
-        <li>Cross-functional Leadership</li>
-      </ul>
+        <p className="section-label">
+          Experience Highlights
+        </p>
+
+        <h2>
+          Leadership Through Platforms
+        </h2>
+
+        <ul className="experience-list">
+          {highlights.map((item) => (
+            <li key={item}>
+              ✓ {item}
+            </li>
+          ))}
+        </ul>
+
+      </div>
     </section>
   );
 }

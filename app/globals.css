@@ -220,3 +220,71 @@ font-size:3rem;
 .platform-card a:hover {
   text-decoration: underline;
 }
+
+.metrics-grid {
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:24px;
+
+margin-top:50px;
+
+}
+
+.metric-card{
+
+padding:30px;
+
+border:1px solid #e5e7eb;
+
+border-radius:18px;
+
+background:white;
+
+}
+
+.metric-card h3{
+
+font-size:2.4rem;
+
+margin-bottom:10px;
+
+}
+
+.metric-card p{
+
+color:#666;
+
+line-height:1.6;
+
+}
+
+.experience-list{
+
+margin-top:40px;
+
+display:grid;
+
+gap:20px;
+
+font-size:1.15rem;
+
+color:#444;
+
+}
+
+.experience-list li{
+
+list-style:none;
+
+padding:18px;
+
+border-left:3px solid #4f46e5;
+
+background:#fafafa;
+
+border-radius:8px;
+
+}
