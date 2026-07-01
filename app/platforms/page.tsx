@@ -9,12 +9,11 @@ export default function PlatformsPage() {
       <section className="platforms-hero">
         <p className="section-label">AI PRODUCT LEADERSHIP PORTFOLIO</p>
 
-        <h1>Enterprise Platform Case Studies</h1>
+        <h1>Enterprise Decision Platform Portfolio</h1>
 
         <p className="hero-description">
-          A collection of enterprise-scale AI, IoT, and decision intelligence
-          platforms demonstrating product strategy, platform thinking, and
-          system design across complex business domains.
+          Collection of enterprise platform blueprints derived from my experience designing and delivering AI, IoT, analytics, and enterprise software products across complex business environments.
+	  Rather than documenting individual products, it captures reusable product strategies, platform thinking, and system design principles used to build scalable enterprise decision systems.
         </p>
       </section>
 
@@ -40,16 +39,6 @@ export default function PlatformsPage() {
       </section>
 
       {/* Closing Statement */}
-      <section className="platforms-footer">
-        <h2>Beyond Individual Products</h2>
-
-        <p>
-          These case studies represent a common product philosophy:
-          transforming fragmented products, processes, and data into
-          intelligent enterprise platforms that improve decision-making,
-          operational visibility, and business outcomes at scale.
-        </p>
-      </section>
 
     </main>
   );

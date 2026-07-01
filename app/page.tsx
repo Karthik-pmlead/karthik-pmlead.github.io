@@ -30,16 +30,11 @@ export default function Home() {
       <section className="preview-section">
         <p className="section-label">ABOUT</p>
 
-        <h2>Building Intelligent Enterprise Systems</h2>
+        <h2>Building Enterprise Intelligence Platforms</h2>
 
         <p>
-          I build enterprise AI platforms that transform fragmented products,
-          processes, and data into intelligent decision systems. My experience
-          spans enterprise software, AI, industrial IoT, and analytics, where
-          I've led 0→1 platform development, product strategy, and
-          cross-functional execution to deliver scalable products with
-          measurable business impact.
-        </p>
+        I design enterprise intelligence platforms that transform fragmented products, processes, and data into intelligent systems that enable faster, better decisions at scale. Across AI, enterprise software, industrial IoT, and analytics, I've led 0→1 platform strategy, product development, and cross-functional execution to build reusable capabilities that improve operational visibility, automate complex workflows, and help organizations operate more intelligently.
+	</p>
 
         <h3 style={{ marginTop: "2.5rem", marginBottom: "1rem" }}>
           Impact Snapshot
@@ -47,17 +42,16 @@ export default function Home() {
 
         <ul className="impact-list">
           <li>
-            Built enterprise AI, analytics, and connected platform solutions across
-            industrial and enterprise environments.
-          </li>
+          Designed enterprise intelligence platforms spanning AI, analytics, enterprise software, and connected systems.
+	  </li>
 
           <li>
-            Led 0→1 product strategy and platform development from customer discovery
+            Led 0→1 platform strategy and product development from customer discovery
             through production launch.
           </li>
 
           <li>
-            Partnered with Engineering, Data Science, Design, and Business teams to
+            Partnered across Engineering, Data Science, Design, and Business teams to
             deliver scalable enterprise products.
           </li>
 
@@ -74,9 +68,9 @@ export default function Home() {
 
       {/* PLATFORM CASE STUDIES */}
       <section className="preview-section">
-        <p className="section-label">CASE STUDIES</p>
+        <p className="section-label">Enterprise Platform</p>
 
-        <h2>Enterprise Platform Case Studies</h2>
+        <h2>Enterprise Platform Portfolio</h2>
 
         <div className="grid">
           <Link
@@ -109,7 +103,7 @@ export default function Home() {
         </div>
 
         <Link href="/platforms" className="learn-more">
-          View all case studies →
+          View all platforms →
         </Link>
       </section>
 

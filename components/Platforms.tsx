@@ -6,10 +6,10 @@ export default function Platforms() {
     <section className="section container">
 
       <p className="section-label">
-        Case Studies
+        ENTERPRISE PLATFORMS
       </p>
 
-      <h2>Enterprise Platform Case Studies</h2>
+      <h2>Enterprise Intelligence Platforms</h2>
 
       <p className="section-description">
         Enterprise AI, data, and decision intelligence platforms demonstrating
@@ -29,7 +29,7 @@ export default function Platforms() {
             <p>{platform.tagline}</p>
 
             <span className="learn-more">
-              View case study →
+              Explore platform →
             </span>
           </Link>
         ))}

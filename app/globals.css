@@ -1190,3 +1190,16 @@ button:focus-visible {
 .contact-link:hover {
   text-decoration: underline;
 }
+
+.platform-section p {
+  max-width: 760px;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+/* ==========================================================
+   PLATFORM SECTION
+========================================================== */
+
+.platform-section p:last-child {
+  margin-bottom: 0;
+}

@@ -14,7 +14,7 @@ export default function Navbar() {
         <nav className="nav-links">
           <Link href="/about">About</Link>
 
-          <Link href="/platforms">Case Studies</Link>
+          <Link href="/platforms">Enterprise Platforms</Link>
 
           <Link href="/insights">Insights</Link>
 

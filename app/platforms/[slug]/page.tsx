@@ -31,7 +31,7 @@ export default async function PlatformPage({
       <nav className="breadcrumb">
         <Link href="/">Home</Link>
         <span>/</span>
-        <Link href="/platforms">Case Studies</Link>
+        <Link href="/platforms">Platforms</Link>
         <span>/</span>
         <span>{platform.title}</span>
       </nav>
